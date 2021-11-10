@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title> Lepki Sybirak </title>
+	<link rel="stylesheet" type="text/css" href="cubelord.css">
+</head>
+
+<body>
+
+	<!--<div style="background:#8393be;height:100vh;width:100vw;"></div>-->
+	<main class="stage-wrap">
+
+		<!-- to place stuff like on  map, we need
+
+			- a section which covers a given y layer,
+			- within it stuff should go from x-coord 0 to max
+				(i don't think i need actual z-axis
+				but that it will be simulated)
+		-->
+
+
+		<section class="stage">	
+		
+			<!-- The stage needs a grid-system, and cubes needs a coord-system to you can "give" it anywhere(let us use react!)-->
+			<div class="cube flat spin">
+	  			<figure class="side top"></figure>
+	  			<figure class="side left"></figure>
+	  			<figure class="side right"></figure>
+			</div>
+
+			<!-- First create a plane where you can easily add and remove structures -->
+			<!-- then make it easy to create new structures -->
+			<!-- then randomize. 
+
+			Det hadde vært kult om man kunne gi js en liste/svg som kunne lage shit i 3d basert på enten enkle pixler eller basic mapfiler
+			Da kunne man "pikselert" bilder i gimp(forenkle dem) for så å generere html basert på de mønsterene kanskje?
+				
+						
+			Creating an archway: ;
+			2 pillars, and a doubled ledge,
+			use border radius on the edges as well as the under arch
+			-->
+		</section>
+	</main>
+</body>
+</html>

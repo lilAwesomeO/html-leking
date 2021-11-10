@@ -1,0 +1,102 @@
+* {box-sizing: border-box;margin:  0;padding: 0;}
+body, html {background: #030915;}
+
+	/*     	
+	#3b0042 
+	#EA2027
+	#9efff6
+	#e5eeef
+	#F54236
+	#821c2d
+	#a8ffef
+	
+	
+#B4B9C5
+#8393be
+#57627e
+
+
+	*/
+
+:root {
+		--color-bg    : #060412;
+
+		--color-center  : #C3E3EF;/*#8393be;*/
+		--color-left: #A1CEEA;/*#B4B9C5;*/
+		--color-right : #6A8FA1;/*#57627e;*/
+
+		--
+}
+
+.stage-wrap {
+	
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: black;
+}
+
+
+.cube {
+
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+
+	/*
+	height: 10vmin;
+	width: 10vmin;*/	
+}
+
+
+.flat {
+	
+	height: 10vmin;
+	width: 10vmin;	
+}
+
+.side {
+	position: absolute;
+	height: inherit;
+	width: inherit;
+	box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+/*
+	med on hover eller noe kan vi "fjerne tåke" ved å adjuste opacitys til objects og å endre fargene
+*/
+.stage {
+
+	/*snip?*/
+    display: flex;
+    /* justify-content: center; */
+    height: 60vmin;
+    width: 80vmin;
+    flex-direction: column;
+    align-items: center;
+    
+    background: var(--color-bg);
+}
+.top {
+ 	/*transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);*/
+	transform: rotate(-45deg) skew(15deg, 15deg);
+	
+	background:  var(--color-center);
+}
+
+.left {
+	background:  var(--color-left);
+
+ /*transform: rotateX(0deg) rotateY(60deg) rotateZ(-45deg);*/
+	transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%);  
+}
+.right {
+	background:  var(--color-right);
+ 	transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%);
+} 

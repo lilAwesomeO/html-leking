@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Lepki Sybirak </title>
+	<style>
+	* {box-sizing: border-box;}
+		html, body {margin:  0;}
+	
+		:root {
+
+				--color-bg    : #004989;
+
+				/*bésj kube*/
+				--color-center: #F9F3BC;
+				--color-left  : #D2C9A1;
+				--color-right : #E8E2B0;				
+		}
+
+		.stage-wrap {
+			/*snip?*/
+			display        : flex;
+			align-items    : center;
+			justify-content: center;
+			
+			height         : 100vh;
+			background     : black;
+		
+		}
+		.stage {
+			/*snip?*/
+			display        : flex;
+			align-items    : stretch;
+			justify-content: center;
+			position: relative;
+			height    : 60vh;
+			width     : 60vw;
+			
+			background: var(--color-bg);
+		}
+
+
+		.box-bottom-wrap {
+			display: flex;
+		}
+
+			.box {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.top {
+
+			height: 5vmax;
+			width: 5vmax;
+			background: var(--color-center);
+			transform :translateY(0vmax) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+		}
+
+		.left {
+			background: var(--color-left);
+			transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,30deg);
+		}
+
+		.right {
+			background: var(--color-right);
+			transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(-1.0) skew(0deg,30deg);	
+		}
+		/*===================================================================================================*/
+.cube-wrap {
+	height:  96px;
+	
+	display:  flex;
+	align-items: center;
+}
+.cube {
+
+	display: flex;
+
+ 	 position: absolute;
+	
+   width:100%;
+   box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+}
+.side {
+	  	
+	position: inherit;
+
+    height: 96px;
+    width: 96px;
+    position: inherit;
+     
+    /*#5880db75;*/
+    border-style: solid;
+
+    
+    border: 0.48vmin outset #4ecb7f36; 
+		box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.top {
+  background: #33cc54;
+  transform: rotate(-45deg) skew(15deg, 15deg);
+
+}
+.left {
+  background: #2db34a;
+  transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%);
+  
+}
+.right {
+  background: #26973e;
+  transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%);
+  
+}
+
+
+	</style>
+</head>
+<body>
+		<main class="stage-wrap">
+				<section class="stage">	
+					<div class="cube-wrap">	
+						<div class="cube spin">
+			  				<figure class="side top"></figure>
+			  				<figure class="side left"></figure>
+			  				<figure class="side right"></figure>
+						</div>
+					</div>	
+				
+				</section>
+
+		</main>
+		
+</body>
+</html>
